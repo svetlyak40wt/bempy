@@ -1,4 +1,6 @@
 # coding: utf-8
+from __future__ import absolute_import
+
 from functools import wraps
 import operator
 from django.template.loader import render_to_string
@@ -134,6 +136,16 @@ def block(**modifiers):
     return decorator
 
 
+def context_block(name):
+    """Basic block with no logic inside.
+    It only passes given context to the renderer.
+    """
+    def _block(**content):
+        return content
+    _block.__name__ = name
+    return block()(_block)
+
+
 class Dispatcher(object):
     def __init__(self, name):
         self.name = name
@@ -164,7 +176,7 @@ class Loader(object):
     def __getattr__(self, name):
         return Dispatcher(name)
 
-blocks = Loader()
+b = Loader()
 
 
 class ImmediateResponse(Exception):

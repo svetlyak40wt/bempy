@@ -1,14 +1,8 @@
-from bempy import block
+from bempy import context_block, block
 
-
-@block()
-def form(**content):
-    return content
-
-
-@block()
-def text_field(**content):
-    return content
+form = context_block('form')
+text_field = context_block('text_field')
+text_field = context_block('text_field')
 
 
 @block()

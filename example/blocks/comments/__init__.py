@@ -1,6 +1,6 @@
 from django.http import HttpResponseRedirect
 from bempy import block, ImmediateResponse
-from bempy import blocks as b
+from bempy import b
 
 
 

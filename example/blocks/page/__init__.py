@@ -8,7 +8,7 @@ def page(**content):
 
 @block(with_menu=True)
 def page(**content):
-    return content
+    return content 
 
     
 @block()
