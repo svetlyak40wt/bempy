@@ -21,7 +21,7 @@ def returns_blocks(func):
             css = page('get-css')
             filename = func.__name__ + '_blocks.css'
             css_filename = os.path.join(
-                settings.STATIC_ROOT, filename)
+                settings.BEMPY_STATIC_DIR, filename)
             css_url = os.path.join(
                 settings.STATIC_URL, filename)
             with open(css_filename, 'w') as f:
