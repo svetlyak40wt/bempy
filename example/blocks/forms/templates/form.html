@@ -1,0 +1,8 @@
+<form action="{{action}}" method="POST">
+  {% for field in fields %}
+    {{ field }}
+  {% endfor %}
+
+  {{ button }}
+  {% csrf_token %}
+</form>
