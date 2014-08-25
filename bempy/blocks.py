@@ -136,14 +136,14 @@ def block(**modifiers):
     return decorator
 
 
-def context_block(name):
+def context_block(name, **modifiers):
     """Basic block with no logic inside.
     It only passes given context to the renderer.
     """
     def _block(**content):
         return content
     _block.__name__ = name
-    return block()(_block)
+    return block(**modifiers)(_block)
 
 
 class Dispatcher(object):

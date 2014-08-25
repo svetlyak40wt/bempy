@@ -1,31 +1,17 @@
-from bempy import block
-
-
-@block()
-def page(**content):
-    return content
+from bempy import block, b
 
 
 @block(with_menu=True)
-def page(**content):
-    return content 
+def page(request, menu, **content):
+    context = content.copy()
 
-    
-@block()
-def test_block(**content):
-    return content
+    context['menu'] = b.menu(items=[
+        b.menu_item(label=label,
+                    path=path,
+                    selected=True)
+        if (request.path == path)
+        else b.menu_item(label=label,
+                         path=path)
+        for path, label in menu])
 
-
-@block()
-def menu(**content):
-    return content
-
-
-@block()
-def menu_item(**content):
-    return content
-
-
-@block(selected=True)
-def menu_item(**content):
-    return content
+    return context

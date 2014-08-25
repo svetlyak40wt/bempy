@@ -4,16 +4,16 @@
   <link rel="stylesheet" href="{% static css_filename %}"/>
 </head>
 
-<body>
-<h1>The Page (with menu)</h1>
+<body class="page page_with-menu_True">
+<h1>Bempy's Blog</h1>
 
 {{ class_ }}
-<div class="navigation">{{menu}}</div>
+<div class="page-navigation">{{menu}}</div>
 
-<div class="content">{{main_content}}</div>
+<div class="content">{{content}}</div>
 
 <div class="comments">{{comments}}</div>
 
-<div class="footer">The Footer</div>
+<div class="footer">{{ footer }}</div>
 </body>
 </html>

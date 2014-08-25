@@ -1,12 +1,4 @@
-"""
-Django settings for blog project.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/1.6/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.6/ref/settings/
-"""
+# coding: utf-8
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -36,10 +28,17 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'blocks.page',
+    'blocks.post',
+    'blocks.button',
     'blocks.comments',
-    'blocks.forms',
-    'posts',
+    # попробовать сделать так, чтобы page импортировал эту зависимость
+    'bempy.django.blocks.menu',
+
+    'bempy.django.blocks.forms',
+    'bempy.django.blocks.layout',
+    'bempy.django.blocks.text',
 )
 
 MIDDLEWARE_CLASSES = (
