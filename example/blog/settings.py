@@ -29,6 +29,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django_extensions',
+    
     'blocks.page',
     'blocks.post',
     'blocks.button',
@@ -39,6 +41,7 @@ INSTALLED_APPS = (
     'bempy.django.blocks.layout',
     'bempy.django.blocks.text',
     'bempy.django.blocks.dropdown',
+    'bempy.django.blocks.title',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -11,7 +11,9 @@ _posts = [{'id': 1,
 
 @block()
 def post(post):
-    return post
+    data = dict(post)
+    data['title'] = b.title(post['title'], level=3)
+    return data
 
 
 @block(latest=True)
@@ -21,7 +23,7 @@ def post():
 
 @block()
 def posts(title='Recent posts'):
-    return dict(title=title,
+    return dict(title=b.title(title, level=2),
                 posts=[
                     b.post(post=post)
                     for post in reversed(_posts)])

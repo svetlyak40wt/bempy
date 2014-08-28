@@ -1,3 +1,3 @@
-from bempy import context_block
+from bempy import context_blocks
 
-text = context_block('text')
+context_blocks('text', locals())

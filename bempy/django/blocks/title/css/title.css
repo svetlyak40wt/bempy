@@ -1,0 +1,30 @@
+.title {
+    font-family: Georgia, sans-serif;
+    font-weight: 300;
+
+    line-height: 55px;
+    font-size: 48px;
+    margin-top: 37px;
+    margin-bottom: 18px;
+}
+
+.title_level2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.title_level3 {
+    line-height: 32px;
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.title_level4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}

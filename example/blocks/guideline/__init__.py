@@ -4,9 +4,8 @@ from bempy.blocks import b
 
 
 @block()
-@uses('bempy.django.blocks.title')
 def guideline(*sections):
     return dict(sections=[
-        dict(title=b.title(title),
+        dict(title=title,
              content=content)
         for title, content in sections])

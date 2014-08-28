@@ -1,6 +1,8 @@
-<dl class="guideline">
+<div class="guideline">
   {% for section in sections %}
-    <dt class="guideline__section-title">{{ section.title }}</dt>
-    <dd class="guideline__section-content">{{ section.content }}</dd>
+    <div class="guideline__plate">
+      <h1 class="guideline__title">{{ section.title }}</h1>
+      <div class="guideline__content"><div class="guideline__wrapper">{{ section.content }}</div></div>
+    </div>
   {% endfor %}
-</dl>
+</div>

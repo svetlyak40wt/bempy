@@ -24,8 +24,13 @@ def index(request):
 @returns_blocks
 def guide(request):
     return b.page(content=b.guideline(
-        ('Just a text', 'Click me'),
-        ('Another text', 'Blick me')),
+        ('Just a text', b.text('This is a text with few paragraphs. One of them is famous lorem.',
+                               """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec aliquet nunc. Phasellus congue ultrices augue, a blandit eros pulvinar non. Nulla tellus nibh, imperdiet eget malesuada ut, fermentum id dui. Maecenas elementum tortor ut diam aliquam rhoncus. Cras et tristique tortor. Sed et diam neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque auctor ullamcorper condimentum. Nam tempus maximus ipsum, id condimentum ex lobortis vitae. Mauris mattis ligula lectus, ut congue enim convallis ac. Mauris suscipit urna vel urna iaculis, nec dapibus ipsum dictum.""",
+                               """Nullam convallis iaculis dui in faucibus. In mi lacus, sollicitudin eu consectetur ut, rutrum at risus. Donec ornare dui suscipit sem consequat, eu lobortis urna fringilla. Nullam sit amet lorem non metus dapibus porttitor ac a tortor. Nulla facilisi. Nulla hendrerit est vehicula, vulputate nibh sed, auctor massa. Sed eu fringilla ante, ut ullamcorper leo. Praesent enim lacus, eleifend cursus imperdiet ut, euismod non quam. Morbi rutrum justo nec mauris elementum feugiat quis lacinia dui. Donec dignissim dui eu justo lacinia, commodo elementum urna luctus. Nam non tincidunt nisl, vitae vehicula odio. Fusce lobortis turpis non facilisis luctus. Pellentesque nec posuere sem. Phasellus eu ex sit amet orci pharetra vestibulum.""")),
+        ('First level title', b.title('First Level Title')),
+        ('Second level title', b.title('Second Level Title', level=2)),
+        ('Third level title', b.title('Third Level Title', level=3)),
+        ('Fourth level title', b.title('Fourth Level Title', level=4))),
         
                   request=request,
                   menu=create_menu(request),
@@ -45,9 +50,8 @@ def guide(request):
     
 @returns_blocks
 def about(request):
-    return b.page(content=b.text(
-        paragraphs=['This is a page about this blog.',
-                    'It could contain multiple paragraph of text']),
+    return b.page(content=b.text('This is a page about this blog.',
+                                 'It could contain multiple paragraph of text'),
                   request=request,
                   menu=create_menu(request),
                   with_menu=True)

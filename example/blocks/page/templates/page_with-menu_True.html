@@ -7,12 +7,13 @@
 
 <body class="page page_with-menu_True">
 
-<h1>Bempy's Blog</h1>
+<header class="page__header">
+  {{title}}
+  <div class="page__navigation">{{menu}}</div>
+</header>
 
-<div class="page-navigation">{{menu}}</div>
+<div class="page__content">{{content}}</div>
 
-<div class="content">{{content}}</div>
-
-<div class="footer">{{ footer }}</div>
+<div class="page__footer">{{ footer }}</div>
 </body>
 </html>

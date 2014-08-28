@@ -1,5 +1,6 @@
-from bempy import context_block
+from bempy import context_blocks
 
-form = context_block('form')
-text_field = context_block('text_field')
-submit_botton = context_block('submit_button')
+context_blocks('form',
+               'text_field',
+               'submit_button',
+               locals())

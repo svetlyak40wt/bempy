@@ -1,0 +1,30 @@
+.guideline__title {
+    font-family: Georgia, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+
+    background: #DDD;
+    border: 1px solid #CCC;
+}
+
+.guideline__content {
+    background: #F5F5F5;
+    border: 1px solid #DDD;
+    border-top: none;
+
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+
+.guideline__wrapper {
+    background: white;
+    border: 1px solid #DDD;
+}

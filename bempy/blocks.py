@@ -151,20 +151,12 @@ def block(**modifiers):
     return decorator
 
 
-def context_block(name, **modifiers):
+def context_blocks(*args, **modifiers):
     """Basic block with no logic inside.
     It only passes given context to the renderer.
     """
-    def _block(*args, **content):
-        return dict(content, args=args)
-    _block.__name__ = name
-    return block(**modifiers)(_block)
+    names, env = args[:-1], args[-1:][0]
 
-
-def context_blocks(names, env, **modifiers):
-    """Basic block with no logic inside.
-    It only passes given context to the renderer.
-    """
     for name in names:
         if isinstance(name, tuple):
             name, modifiers = name

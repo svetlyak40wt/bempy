@@ -1,9 +1,10 @@
 
 .menu-item {
-    font-size: 1.5em;
+    font-size: 28px;
+    line-height: 28px;
     list-style: none;
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 20px;
 }
 
 .menu-item > a {
@@ -17,16 +18,35 @@
 }
 
 
-.page {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-.page-navigation {
-    border-bottom: 1px solid gray;
+.title {
+    font-family: Georgia, sans-serif;
+    font-weight: 300;
+
+    line-height: 55px;
+    font-size: 48px;
+    margin-top: 37px;
+    margin-bottom: 18px;
 }
 
-.menu {
-    padding-left: 0px;
+.title_level2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.title_level3 {
+    line-height: 32px;
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.title_level4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 7px;
 }
 
 .posts-list {
@@ -35,4 +55,30 @@
 
 .posts-list__post {
     list-style: none;
+}
+
+.menu {
+    padding-left: 0px;
+}
+
+/** * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) * Richard Clark (http://richclarkdesign.com) * http://cssreset.com */html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {    margin:0;    padding:0;    border:0;    outline:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}body {    line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {    display:block;}nav ul {    list-style:none;}blockquote, q {    quotes:none;}blockquote:before, blockquote:after,q:before, q:after {    content:'';    content:none;}a {    margin:0;    padding:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}/* change colours to suit your needs */ins {    background-color:#ff9;    color:#000;    text-decoration:none;}/* change colours to suit your needs */mark {    background-color:#ff9;    color:#000;    font-style:italic;    font-weight:bold;}del {    text-decoration: line-through;}abbr[title], dfn[title] {    border-bottom:1px dotted;    cursor:help;}table {    border-collapse:collapse;    border-spacing:0;}/* change border colour to suit your needs */hr {    display:block;    height:1px;    border:0;    border-top:1px solid #cccccc;    margin:1em 0;    padding:0;}input, select {    vertical-align:middle;}
+
+.page {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.page__content {
+    margin-top: 22px;
+}
+
+.page__footer {
+    margin-top: 22px;
+}
+.page-navigation {
+    border-bottom: 1px solid gray;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }

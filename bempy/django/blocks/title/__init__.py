@@ -1,3 +1,5 @@
-from bempy.blocks import context_blocks
+from bempy.blocks import block
 
-context_blocks(['title'], locals())
+@block()
+def title(content, level=None):
+    return dict(content=content, level=level or 1)
