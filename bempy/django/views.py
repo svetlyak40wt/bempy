@@ -16,18 +16,21 @@ def returns_blocks(func):
         page = func(request)
         
         try:
-            css = page('get-css')
             filename = func.__name__ + '_blocks.css'
             css_filename = os.path.join(
                 settings.BEMPY_STATIC_DIR, filename)
             css_url = os.path.join(
                 settings.STATIC_URL, filename)
+                
+            response = HttpResponse(page('render',
+                                         request=request,
+                                         css_filename=css_url))
+            css = page('get-css')
             with open(css_filename, 'w') as f:
                 f.write(u'\n'.join(css))
-                
-            return HttpResponse(page('render',
-                                     request=request,
-                                     css_filename=css_url))
+
+            return response
+
         except ImmediateResponse as e:
             return e.response
     return wrapper

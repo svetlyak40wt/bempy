@@ -1,8 +1,38 @@
 
+.menu-item {
+    font-size: 1.5em;
+    list-style: none;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    color: gray;
+}
+
+.menu-item > a:hover {
+    text-decoration: !inherit;
+    color: black;
+}
+
+
 .page {
     padding-left: 200px;
     padding-right: 200px;
 }
 .page-navigation {
     border-bottom: 1px solid gray;
+}
+
+.menu {
+    padding-left: 0px;
+}
+
+.posts-list {
+    padding-left: 0;
+}
+
+.posts-list__post {
+    list-style: none;
 }

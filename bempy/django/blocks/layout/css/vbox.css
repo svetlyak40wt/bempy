@@ -1,0 +1,7 @@
+.vbox {
+    padding-left: 0;
+}
+
+.vbox__item {
+    list-style: none;
+}

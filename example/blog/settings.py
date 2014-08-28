@@ -33,12 +33,12 @@ INSTALLED_APPS = (
     'blocks.post',
     'blocks.button',
     'blocks.comments',
-    # попробовать сделать так, чтобы page импортировал эту зависимость
-    'bempy.django.blocks.menu',
+    'blocks.guideline',
 
     'bempy.django.blocks.forms',
     'bempy.django.blocks.layout',
     'bempy.django.blocks.text',
+    'bempy.django.blocks.dropdown',
 )
 
 MIDDLEWARE_CLASSES = (

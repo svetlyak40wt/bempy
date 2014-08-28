@@ -1,7 +1,9 @@
 # coding: utf-8
 from __future__ import absolute_import
 
+from clint.textui import colored
 from functools import wraps
+from itertools import chain
 import operator
 from django.template.loader import render_to_string
 from django.template import RequestContext
@@ -59,16 +61,22 @@ def get_block_css(func, **modifiers):
         get_blockname_with_modifiers(func, **modifiers) + '.css')
 
     result = u''
-    print 'checking', main_css_filename
+    print 'checking', main_css_filename,
     if os.path.exists(main_css_filename):
+        print colored.green('found')
         with open(main_css_filename) as f:
             result += f.read() + '\n'
+    else:
+        print colored.red('missing')
 
     if css_filename_with_modifiers != main_css_filename:
-        print 'checking', css_filename_with_modifiers
+        print 'checking', css_filename_with_modifiers,
         if os.path.exists(css_filename_with_modifiers):
+            print colored.green('found')
             with open(css_filename_with_modifiers) as f:
                 result += f.read() + '\n'
+        else:
+            print colored.red('missing')
 
     return result
 
@@ -80,13 +88,19 @@ def block(**modifiers):
             """Этот декоратор реализует отложенный вызов функции, которую он декорирует.
             По сути, он возвращает promice, который при вызове, уже зовет реальную функцию.
             """
+            # если render ни разу не вызывался, то returned_context будет пустой
+            # get-css использует returned_context для извлечения информации о блоках
+            # которые страница использует внутри, а не получает на входе
+            returned_context = {}
+
             def ret(action, **additional_context):
-                print action, 'block_' + func.__name__
+                print colored.blue(action), 'block_' + func.__name__
 
                 if action == 'render':
                     request = additional_context.pop('request')
-                    context = func(*args, **(dict(kwargs,
-                                                  **additional_context)))
+                    returned_context.update(func(*args,
+                                                 **(dict(kwargs,
+                                                         **additional_context))))
 
                     def render(value):
                         if isinstance(value, (list, tuple)):
@@ -101,14 +115,13 @@ def block(**modifiers):
                         return value
                         
                     # now render all blocks in the context
-                    context = dict((key, render(value))
-                                   for key, value in context.iteritems())
+                    rendered_context = dict((key, render(value))
+                                            for key, value in returned_context.iteritems())
 
                     return render_to_string(get_template_name(func, **modifiers),
-                                            context,
+                                            rendered_context,
                                             RequestContext(request))
                 elif action == 'get-css':
-                    from itertools import chain
                     def get_css(value):
                         if isinstance(value, (list, tuple)):
                             return chain(*map(get_css, value))
@@ -122,7 +135,9 @@ def block(**modifiers):
                         return []
 
                     css = [get_block_css(func, **modifiers)]
-                    for key, value in kwargs.iteritems():
+
+                    for key, value in chain(kwargs.iteritems(),
+                                            returned_context.iteritems()):
                         for item in get_css(value):
                             if item is not None:
                                 css.append(item)
@@ -140,17 +155,34 @@ def context_block(name, **modifiers):
     """Basic block with no logic inside.
     It only passes given context to the renderer.
     """
-    def _block(**content):
-        return content
+    def _block(*args, **content):
+        return dict(content, args=args)
     _block.__name__ = name
     return block(**modifiers)(_block)
+
+
+def context_blocks(names, env, **modifiers):
+    """Basic block with no logic inside.
+    It only passes given context to the renderer.
+    """
+    for name in names:
+        if isinstance(name, tuple):
+            name, modifiers = name
+        else:
+            modifiers = {}
+
+        def _block(*args, **content):
+            return dict(content, args=args)
+        _block.__name__ = name
+        _block.__module__ = env['__name__']
+        env[name] = block(**modifiers)(_block)
 
 
 class Dispatcher(object):
     def __init__(self, name):
         self.name = name
 
-    def __call__(self, **kwargs):
+    def __call__(self, *args, **kwargs):
         possible_modifiers = [key[1] for key, value in registry.items()
                               if key[0] == self.name]
         possible_modifiers = reduce(operator.add, possible_modifiers, tuple())
@@ -165,7 +197,7 @@ class Dispatcher(object):
                    if key not in modifiers}
 
         block_constructor = registry[(self.name, dict_to_key(modifiers))]
-        return block_constructor(**content)
+        return block_constructor(*args, **content)
 
 
 class Loader(object):

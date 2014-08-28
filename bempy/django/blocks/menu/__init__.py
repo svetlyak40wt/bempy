@@ -1,6 +1,6 @@
-from bempy import context_block
+from bempy import context_blocks
 
-menu = context_block('menu')
-menu_item = context_block('menu_item')
-menu_item = context_block('menu_item', selected=True)
-
+context_blocks(['menu',
+                'menu_item',
+                ('menu_item', {'selected': True})],
+               locals())
