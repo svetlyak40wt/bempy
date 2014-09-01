@@ -2,7 +2,12 @@
   {% for section in sections %}
     <div class="guideline__plate">
       <h1 class="guideline__title">{{ section.title }}</h1>
-      <div class="guideline__content"><div class="guideline__wrapper">{{ section.content }}</div></div>
+      <div class="guideline__content">
+      {% for description, block in section.content %}
+        {% if description %}<div class="guideline__example-description">{{ description }}</div>{% endif %}
+        <div class="guideline__example-wrapper">{{ block }}</div>
+      {% endfor %}
+      </div>
     </div>
   {% endfor %}
 </div>

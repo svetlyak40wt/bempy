@@ -4,14 +4,21 @@ from bempy.django import uses
 @block(with_menu=True)
 @uses('bempy.django.blocks.cssreset',
       'bempy.django.blocks.menu',
-      'bempy.django.blocks.title',
-      'bempy.django.blocks.login_menu')
+      'bempy.django.blocks.title')
 def page(request, menu, **content):
     context = content.copy()
 
     context['title'] = b.title("Bempy's Blog")
     context['cssreset'] = b.cssreset()
-    context['login'] = b.login_menu()
+
+    if request.user.is_authenticated() or True:
+        context['login'] = b.menu(b.href('Preferences', '/settings/'),
+                                  b.href('Logout', '/logout/'),
+                                  label=request.user.username or 'svetlyak40wt',
+                                  type='dropdown')
+    else:
+        context['login'] = b.href('Login', '/login/')
+
     context['menu'] = b.menu(items=[
         b.menu_item(label=label,
                     path=path,

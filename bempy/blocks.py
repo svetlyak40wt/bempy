@@ -81,6 +81,41 @@ def get_block_css(func, **modifiers):
     return result
 
 
+def get_block_js(func, **modifiers):
+    """Возвращает js для блока с заданными модификаторами.
+    """
+    from importlib import import_module
+    import os.path
+    mo = import_module(func.__module__)
+    dir_name = os.path.dirname(mo.__file__)
+    main_js_filename = os.path.join(
+        dir_name, 'js',
+        get_block_name(func) + '.js')
+    js_filename_with_modifiers = os.path.join(
+        dir_name, 'js',
+        get_blockname_with_modifiers(func, **modifiers) + '.js')
+
+    result = u''
+    print 'checking', main_js_filename,
+    if os.path.exists(main_js_filename):
+        print colored.green('found')
+        with open(main_js_filename) as f:
+            result += f.read() + '\n'
+    else:
+        print colored.red('missing')
+
+    if js_filename_with_modifiers != main_js_filename:
+        print 'checking', js_filename_with_modifiers,
+        if os.path.exists(js_filename_with_modifiers):
+            print colored.green('found')
+            with open(js_filename_with_modifiers) as f:
+                result += f.read() + '\n'
+        else:
+            print colored.red('missing')
+
+    return result
+
+
 def block(**modifiers):
     def decorator(func):
         @wraps(func)
@@ -143,7 +178,30 @@ def block(**modifiers):
                                 css.append(item)
                     return list(set(css))
 
-            ret.block_actions = ['render', 'get-css']
+                elif action == 'get-js':
+                    def get_js(value):
+                        if isinstance(value, (list, tuple)):
+                            return chain(*map(get_js, value))
+                        elif isinstance(value, dict):
+                            return chain(*(get_js(val)
+                                           for key, val
+                                           in value.iteritems()))
+
+                        if 'get-js' in getattr(value, 'block_actions', []):
+                            return value('get-js')
+                        return []
+
+                    js = [get_block_js(func, **modifiers)]
+
+                    for key, value in chain(kwargs.iteritems(),
+                                            returned_context.iteritems()):
+                        for item in get_js(value):
+                            if item is not None:
+                                js.append(item)
+                    return list(set(js))
+
+
+            ret.block_actions = ['render', 'get-css', 'get-js']
             ret.__name__ = 'block_' + func.__name__
             return ret
         registry[(func.__name__, dict_to_key(modifiers))] = wrapper

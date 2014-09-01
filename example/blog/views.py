@@ -30,24 +30,35 @@ def guide(request):
         ('First level title', b.title('First Level Title')),
         ('Second level title', b.title('Second Level Title', level=2)),
         ('Third level title', b.title('Third Level Title', level=3)),
-        ('Fourth level title', b.title('Fourth Level Title', level=4))),
+        ('Fourth level title', b.title('Fourth Level Title', level=4)),
+        ('Drop down menu',
+            ('This is collapsed dropdown menu:',
+             b.menu('First item',
+                    'Second item',
+                    'Third item',
+                    type='dropdown',
+                    label='Click me NOW')),
+            ('With links in list items:',
+             b.menu(b.href('First item', '/first/'),
+                    b.href('Second item', '/second/'),
+                    b.href('Third item', '/third/'),
+                    type='dropdown',
+                    label='Click me NOW')),
+            ('And here is opened dropdown menu:',
+             b.menu('First item',
+                    'Second item',
+                    'Third item',
+                    type='dropdown',
+                    label='Click me NOW',
+                    opened=True)),
+
+     )),
         
                   request=request,
                   menu=create_menu(request),
                   with_menu=True)
 
 
-    # return b.page(content=b.vbox(
-    #     content=[b.dropdown(label=b.text('Click me'),
-    #                         items=[b.text('First'),
-    #                                b.text('Second'),
-    #                                b.text('Third')])]),
-    #               request=request,
-    #               menu=create_menu(request),
-    #               with_menu=True)
-
-
-    
 @returns_blocks
 def about(request):
     return b.page(content=b.text('This is a page about this blog.',

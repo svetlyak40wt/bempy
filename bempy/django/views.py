@@ -21,13 +21,24 @@ def returns_blocks(func):
                 settings.BEMPY_STATIC_DIR, filename)
             css_url = os.path.join(
                 settings.STATIC_URL, filename)
-                
+
+            filename = func.__name__ + '_blocks.js'
+            js_filename = os.path.join(
+                settings.BEMPY_STATIC_DIR, filename)
+            js_url = os.path.join(
+                settings.STATIC_URL, filename)
+
             response = HttpResponse(page('render',
                                          request=request,
+                                         js_filename=js_url,
                                          css_filename=css_url))
             css = page('get-css')
             with open(css_filename, 'w') as f:
                 f.write(u'\n'.join(css))
+
+            js = page('get-js')
+            with open(js_filename, 'w') as f:
+                f.write(u'\n'.join(js))
 
             return response
 

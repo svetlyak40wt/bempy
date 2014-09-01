@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'bempy.django.blocks.text',
     'bempy.django.blocks.dropdown',
     'bempy.django.blocks.title',
+    'bempy.django.blocks.href',
 )
 
 MIDDLEWARE_CLASSES = (
