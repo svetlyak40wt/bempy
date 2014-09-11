@@ -1,45 +1,22 @@
 
-.guideline__title {
-    font-family: Georgia, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 15px;
-    padding-bottom: 7px;
-
-    background: #DDD;
-    border: 1px solid #CCC;
+.menu-item {
+    font-size: 28px;
+    line-height: 28px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.guideline__content {
-    background: #F5F5F5;
-    border: 1px solid #DDD;
-    border-top: none;
-
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-top: 11px;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
+.menu-item > a {
+    text-decoration: none;
+    color: gray;
 }
 
-.guideline__example-wrapper {
-    background: white;
-    border: 1px solid #DDD;
-    margin-top: 11px;
+.menu-item > a:hover {
+    text-decoration: !inherit;
+    color: black;
 }
 
-.guideline__example-description {
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 22px;
-}
-
-.guideline__example-description:first-child {
-    margin-top: 0px;
-}
 
 .title {
     font-family: Georgia, sans-serif;
@@ -71,25 +48,6 @@
     margin-top: 15px;
     margin-bottom: 7px;
 }
-
-.menu-item {
-    font-size: 28px;
-    line-height: 28px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.menu-item > a {
-    text-decoration: none;
-    color: gray;
-}
-
-.menu-item > a:hover {
-    text-decoration: !inherit;
-    color: black;
-}
-
 
 .text__paragraph {
     font-size: 16px;
@@ -182,6 +140,48 @@ body {
 
 .page__login {
     float: right;
+}
+
+.guideline__title {
+    font-family: Georgia, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+
+    background: #C8E48E;
+    border: 1px solid #CCC;
+}
+
+.guideline__content {
+    background: #F8FFEE;
+    border: 1px solid #DDD;
+    border-top: none;
+
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 11px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+
+.guideline__example-wrapper {
+    background: white;
+    border: 1px solid #DDD;
+    margin-top: 11px;
+}
+
+.guideline__example-description {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 22px;
+}
+
+.guideline__example-description:first-child {
+    margin-top: 0px;
 }
 
 /** * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) * Richard Clark (http://richclarkdesign.com) * http://cssreset.com */html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {    margin:0;    padding:0;    border:0;    outline:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}body {    line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {    display:block;}nav ul {    list-style:none;}blockquote, q {    quotes:none;}blockquote:before, blockquote:after,q:before, q:after {    content:'';    content:none;}a {    margin:0;    padding:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}/* change colours to suit your needs */ins {    background-color:#ff9;    color:#000;    text-decoration:none;}/* change colours to suit your needs */mark {    background-color:#ff9;    color:#000;    font-style:italic;    font-weight:bold;}del {    text-decoration: line-through;}abbr[title], dfn[title] {    border-bottom:1px dotted;    cursor:help;}table {    border-collapse:collapse;    border-spacing:0;}/* change border colour to suit your needs */hr {    display:block;    height:1px;    border:0;    border-top:1px solid #cccccc;    margin:1em 0;    padding:0;}input, select {    vertical-align:middle;}
