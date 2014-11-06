@@ -12,10 +12,11 @@ def page(request, menu, **content):
     context['cssreset'] = b.cssreset()
 
     if request.user.is_authenticated() or True:
-        context['login'] = b.menu(b.href('Preferences', '/settings/'),
-                                  b.href('Logout', '/logout/'),
-                                  label=request.user.username or 'svetlyak40wt',
-                                  type='dropdown')
+        context['login'] = b.menu(
+            b.href('Preferences', '/settings/'),
+            b.href('Logout', '/logout/'),
+            label=request.user.username or 'svetlyak40wt',
+            type='dropdown')
     else:
         context['login'] = b.href('Login', '/login/')
 

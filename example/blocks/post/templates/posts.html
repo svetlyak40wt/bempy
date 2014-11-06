@@ -1,15 +1,13 @@
 <div class="posts">
-{% if posts %}
-<h1 class="posts__title">{{ title }}</h1>
+  {% if posts %}
+    <h1 class="posts__title">{{ title }}</h1>
 
-<ul class="posts-list">
-  {% for post in posts %}
-    <li class="posts-list__post">
-      {{ post }}
-    </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p class="posts__empty-message">No posts in this blog yet</p>
-{% endif %}
+    <ul class="posts-list">
+      {% for post in posts %}
+        <li class="posts-list__post">{{ post }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="posts__empty-message">No posts in this blog yet</p>
+  {% endif %}
 </div>
