@@ -34,11 +34,11 @@ def returns_blocks(func):
                                          css_filename=css_url))
             css = page('get-css')
             with open(css_filename, 'w') as f:
-                f.write(u'\n'.join(css))
+                f.write(u'\n'.join(css).encode('utf-8'))
 
             js = page('get-js')
             with open(js_filename, 'w') as f:
-                f.write(u'\n'.join(js))
+                f.write(u'\n'.join(js).encode('utf-8'))
 
             return response
 

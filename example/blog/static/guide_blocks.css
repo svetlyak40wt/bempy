@@ -1,4 +1,3 @@
-
 .guideline__title {
     font-family: Georgia, sans-serif;
     font-size: 18px;
@@ -40,6 +39,765 @@
     margin-top: 0px;
 }
 
+/* /Users/art/tmp/baby-loris/client/pages/index/index-page/index-page.styl:begin */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* /Users/art/tmp/baby-loris/client/pages/index/index-page/index-page.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/core/y-design/y-design.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/core/y-design/y-design.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/_skin/y-header_skin_fluid.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/_skin/y-header_skin_fluid.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_air-active.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_air-active.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_air.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_air.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_common.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_common.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_normal.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_normal.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-both.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-both.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-left.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-left.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-right.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pin-right.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pseudo.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_pseudo.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-l.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-l.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-m.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-m.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-s.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-s.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-xl.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_size-xl.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_stretched.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_stretched.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_clear-10.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_clear-10.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_clear-14.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_clear-14.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_common.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_common.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_icons.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_icons.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_one-line.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_one-line.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/_skin/y-header_skin_default.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/_skin/y-header_skin_default.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_active.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/_skin/y-button_skin_active.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_air.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/_skin/y-input_skin_air.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-services-board/y-services-board_islet.styl:begin */
+.y-services-board_islet {
+  background: #fff;
+  padding-bottom: 50px;
+/*
+        Иконка над текстом
+    */
+/*
+        Иконка над ссылкой "все сервисы"
+    */
+}
+.y-services-board_islet__container {
+  width: 768px;
+  margin: 0 auto;
+}
+.y-services-board_islet__link,
+.y-services-board_islet__all {
+  position: relative;
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.y-services-board_islet__link-text {
+  position: absolute;
+  bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #333;
+  -webkit-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+}
+.y-services-board_islet__all .y-services-board_islet__link-text {
+  color: #999;
+}
+.y-services-board_islet__link:hover .y-services-board_islet__link-text {
+  color: #444;
+}
+.y-services-board_islet__all:hover .y-services-board_islet__link-text {
+  color: #000;
+}
+.y-services-board_islet__link-icon {
+  position: absolute;
+}
+.y-services-board_islet__link .y-services-board_islet__link-icon {
+  top: 37px;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  margin-left: -28px;
+  -webkit-transition: top 0.15s ease-out;
+  transition: top 0.15s ease-out;
+}
+.y-services-board_islet__link:hover .y-services-board_islet__link-icon {
+  top: 32px;
+}
+.y-services-board_islet__all .y-services-board_islet__link-icon {
+  width: 40px;
+  height: 8px;
+  top: 60px;
+  left: 44px;
+  opacity: 0.2;
+}
+.y-services-board_islet__all:hover .y-services-board_islet__link-icon {
+  opacity: 1;
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-services-board/y-services-board_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-fog/_skin/y-fog_skin_default.styl:begin */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-fog/_skin/y-fog_skin_default.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-suggest-drop-item/y-suggest-drop-item_islet.styl:begin */
+.y-suggest-drop-item_islet {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0 0 9px;
+}
+.y-suggest-drop-item_islet._selected {
+  background: #ffeba0;
+}
+.y-suggest-drop-item_islet em {
+  font-style: normal;
+  font-weight: bold;
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-suggest-drop-item/y-suggest-drop-item_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-suggest-drop/y-suggest-drop_islet.styl:begin */
+.y-suggest-drop_islet__content {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 8px 25px -5px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 25px -5px rgba(0,0,0,0.25);
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-top: -1px;
+  position: absolute;
+  width: 100%;
+  z-index: 1100;
+  background: #fff;
+  background-clip: padding-box;
+}
+.y-suggest-drop_islet__items {
+  padding: 0px;
+  margin: 0px;
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-suggest-drop/y-suggest-drop_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/y-button_islet-pseudo.styl:begin */
+.y-button_islet-pseudo {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: baseline;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  background-image: none;
+/*
+     * Нужно чтоб цвет фона не был виден из-под полупрозрачного бордера
+     * see {@link http://css-tricks.com/transparent-borders-with-background-clip}
+     */
+  background-clip: padding-box;
+/*
+     * @see {@link http://alexbaumgertner.ya.ru/replies.xml?item_no=2112}
+     * @see {@link http://www.cssnewbie.com/input-button-line-height-bug/}
+     *
+     */
+/*
+        Если первый элемент - иконка, меняем левый отступ у текста
+        Переопределяем своство из миксина _skin_[m | s | l]()
+    */
+/*
+        Если справа от текста есть элемент (пока это всегда __tick), то
+        уменьшаем правый отступ у текста
+    */
+/*
+        Правильный путь - использовать :not(._disabled), чтобы назначать стили для состояний
+        ИЕ8 не понимает :not(), поэтому в состоянии _disabled максимальным весом сбрасываем всё.
+    */
+  font-size: 13px;
+  height: 28px;
+/* Если иконка одна, нужны одинаковые размеры*/
+  border-color: rgba(0,0,0,0.2);
+  background-color: #fff;
+  background-color: transparent;
+}
+.y-button_islet-pseudo::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.y-button_islet-pseudo:focus {
+  -webkit-box-shadow: 0 0 10px #fc0;
+  box-shadow: 0 0 10px #fc0;
+}
+.y-button_islet-pseudo__text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  color: #333;
+  border: none;
+  background: none;
+}
+.y-button_islet-pseudo__text:focus {
+  border: none;
+  outline: none;
+}
+.y-button_islet-pseudo__icon:first-child + .y-button_islet-pseudo__text {
+  padding-left: 0;
+}
+.y-button_islet-pseudo__text:not(:last-child) {
+  padding-right: 0;
+}
+.y-button_islet-pseudo__tick {
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: url("../../node_modules/islets/blocks/common/y-button/_skin/y-button__tick.svg") 50% 50% no-repeat;
+}
+.y-button_islet-pseudo._pressed .y-button_islet-pseudo__tick {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.y-ua_svg_no .y-button_islet-pseudo__tick {
+  width: 9px;
+  background-image: url("../../node_modules/islets/blocks/common/y-button/_skin/y-button__tick.png");
+}
+.y-button_islet-pseudo__text,
+.y-button_islet-pseudo__icon,
+.y-button_islet-pseudo__tick {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  vertical-align: top;
+}
+.y-button_islet-pseudo._disabled,
+.y-button_islet-pseudo._disabled:hover {
+  cursor: default;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: rgba(0,0,0,0.08);
+  background-color: rgba(0,0,0,0.08);
+}
+.y-button_islet-pseudo._disabled .y-button_islet-pseudo__text {
+  color: #aaa;
+}
+.y-button_islet-pseudo__text {
+  padding: 0 13px;
+}
+.y-button_islet-pseudo__icon,
+.y-button_islet-pseudo__tick {
+  width: 34px;
+}
+.y-button_islet-pseudo__text,
+.y-button_islet-pseudo__icon,
+.y-button_islet-pseudo__tick {
+  line-height: 26px;
+}
+.y-button_islet-pseudo__icon:only-child {
+  width: 26px;
+}
+.y-button_islet-pseudo:hover {
+  border-color: rgba(0,0,0,0.3);
+}
+.y-button_islet-pseudo:focus {
+  border-color: rgba(178,142,0,0.6);
+}
+.y-button_islet-pseudo._pressed {
+  background-color: #f6f5f3;
+}
+.y-button_islet-pseudo._pressed {
+  background-color: rgba(0,0,0,0.05);
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/y-button_islet-pseudo.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/y-button_islet.styl:begin */
+.y-button_islet {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: baseline;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  background-image: none;
+/*
+     * Нужно чтоб цвет фона не был виден из-под полупрозрачного бордера
+     * see {@link http://css-tricks.com/transparent-borders-with-background-clip}
+     */
+  background-clip: padding-box;
+/*
+     * @see {@link http://alexbaumgertner.ya.ru/replies.xml?item_no=2112}
+     * @see {@link http://www.cssnewbie.com/input-button-line-height-bug/}
+     *
+     */
+/*
+        Если первый элемент - иконка, меняем левый отступ у текста
+        Переопределяем своство из миксина _skin_[m | s | l]()
+    */
+/*
+        Если справа от текста есть элемент (пока это всегда __tick), то
+        уменьшаем правый отступ у текста
+    */
+/*
+        Правильный путь - использовать :not(._disabled), чтобы назначать стили для состояний
+        ИЕ8 не понимает :not(), поэтому в состоянии _disabled максимальным весом сбрасываем всё.
+    */
+  font-size: 13px;
+  height: 28px;
+/* Если иконка одна, нужны одинаковые размеры*/
+  border-color: rgba(0,0,0,0.2);
+  background-color: #fff;
+}
+.y-button_islet::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.y-button_islet:focus {
+  -webkit-box-shadow: 0 0 10px #fc0;
+  box-shadow: 0 0 10px #fc0;
+}
+.y-button_islet__text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  color: #333;
+  border: none;
+  background: none;
+}
+.y-button_islet__text:focus {
+  border: none;
+  outline: none;
+}
+.y-button_islet__icon:first-child + .y-button_islet__text {
+  padding-left: 0;
+}
+.y-button_islet__text:not(:last-child) {
+  padding-right: 0;
+}
+.y-button_islet__tick {
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: url("../../node_modules/islets/blocks/common/y-button/_skin/y-button__tick.svg") 50% 50% no-repeat;
+}
+.y-button_islet._pressed .y-button_islet__tick {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.y-ua_svg_no .y-button_islet__tick {
+  width: 9px;
+  background-image: url("../../node_modules/islets/blocks/common/y-button/_skin/y-button__tick.png");
+}
+.y-button_islet__text,
+.y-button_islet__icon,
+.y-button_islet__tick {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  vertical-align: top;
+}
+.y-button_islet._disabled,
+.y-button_islet._disabled:hover {
+  cursor: default;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: rgba(0,0,0,0.08);
+  background-color: rgba(0,0,0,0.08);
+}
+.y-button_islet._disabled .y-button_islet__text {
+  color: #aaa;
+}
+.y-button_islet__text {
+  padding: 0 13px;
+}
+.y-button_islet__icon,
+.y-button_islet__tick {
+  width: 34px;
+}
+.y-button_islet__text,
+.y-button_islet__icon,
+.y-button_islet__tick {
+  line-height: 26px;
+}
+.y-button_islet__icon:only-child {
+  width: 26px;
+}
+.y-button_islet:hover {
+  border-color: rgba(0,0,0,0.3);
+}
+.y-button_islet:focus {
+  border-color: rgba(178,142,0,0.6);
+}
+.y-button_islet._pressed {
+  background-color: #f6f5f3;
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-button/y-button_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/y-input_islet.styl:begin */
+.y-input_islet {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: #fff;
+  background-clip: padding-box;
+  vertical-align: baseline;
+  line-height: normal;
+/* анимация желтой фокусной рамки */
+  -webkit-transition: -webkit-box-shadow 0.05s ease-out;
+/* анимация желтой фокусной рамки */
+  transition: box-shadow 0.05s ease-out;
+/* Cтили обертки инпута */
+/* <input> */
+/* прячем стандартный крестик IE10 */
+}
+.y-input_islet._focused {
+  outline: 0;
+  -webkit-box-shadow: 0 0 10px #fc0;
+  box-shadow: 0 0 10px #fc0;
+  border-color: rgba(178,142,0,0.6);
+}
+.y-input_islet__context {
+  display: block;
+  height: 100%;
+/* нужен для помещения обертки в контект. чтобы он хитро встраивался между префиксом и постфиксом */
+  overflow: hidden;
+  cursor: text;
+}
+.y-input_islet__control {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0.6em transparent solid;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+  height: 26px;
+  vertical-align: baseline;
+  font-family: Arial , Helvetica , sans-serif;
+/* Ресет дефолтных тачевых стилей */
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-image: none;
+/* FF-особенность см. http://alexbaumgertner.ya.ru/replies.xml?item_no=2112 */
+}
+.y-input_islet__control::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.y-input_islet__clear + .y-input_islet__context .y-input_islet__control {
+  border-right-width: 26px;
+}
+.y-input_islet__control:focus {
+  outline: none;
+}
+.y-input_islet__control::-ms-clear {
+  display: none;
+}
+.y-input_islet._disabled {
+  cursor: default;
+  border-color: rgba(0,0,0,0.08);
+  background-color: rgba(0,0,0,0.08);
+}
+.y-input_islet._disabled .y-input_islet__control {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: inherit;
+}
+.y-input_islet__clear {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.y-input_islet__clear._visible {
+  display: block;
+}
+.y-input_islet__clear {
+  opacity: 0.3;
+}
+.y-input_islet__clear:hover {
+  opacity: 1;
+}
+.y-input_islet__clear {
+  background-image: url("../../node_modules/islets/blocks/common/y-input/images/clear-10.svg");
+}
+.y-input_islet__icons-left {
+  float: left;
+}
+.y-input_islet__icons-right {
+  float: right;
+}
+.y-input_islet__icon {
+  display: inline-block;
+}
+.y-input_islet__control {
+  font-size: 13px;
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-input/y-input_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-fog/y-fog_islet.styl:begin */
+.y-fog_islet {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.15);
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-fog/y-fog_islet.styl:end */
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/y-header_islet.styl:begin */
+.y-header_islet__info {
+  height: 40px;
+}
+.y-header_islet__info {
+  float: right;
+/* Отталкиваюсь от срединной части шапки согласно гайдам */
+  margin-left: 16px;
+}
+.y-header_islet__wrapper {
+  position: relative;
+  z-index: 1100;
+  min-width: 645px;
+  padding: 14px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+  height: 40px;
+}
+.y-header_islet__board {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  -webkit-transition: top 0.15s ease-out;
+  transition: top 0.15s ease-out;
+  z-index: 1040;
+  background: #fff;
+}
+.y-header_islet._board_opened .y-header_islet__board {
+  top: 70px;
+}
+.y-header_islet__arrow {
+/* 117 = 97(logo) + 20(padding-right)  */
+  margin: 0 0 0 117px;
+  padding: 0;
+/*
+            Главная составляющая резиновой раскладки
+
+            Задаёт новый контекст для блока, поэтому остаётся на той же строке,
+            что и рядом расположенный флоут с юзерской частью
+        */
+  overflow: hidden;
+}
+.y-header_islet__arrow {
+  display: inline-block;
+  max-width: 658px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+/* По дизайну внутри стрелки точновыверенные отступы */
+  padding: 4px 25px 4px 4px;
+/* Все версии */
+  background-repeat: no-repeat;
+  background-position: right center;
+/* Дряхлые версии браузеров */
+  background-color: #fd0;
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__arrow.png");
+/* Свежие версии браузеров */
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__arrow.svg"), -webkit-gradient(linear, right top, left bottom, from(#ffdb4c), to(#fc0));
+/* Свежие версии браузеров */
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__arrow.svg"), -webkit-linear-gradient(top right, #ffdb4c, #fc0);
+/* Свежие версии браузеров */
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__arrow.svg"), linear-gradient(to bottom left, #ffdb4c, #fc0);
+}
+.y-header_islet__logo {
+  display: -moz-inline-box;
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  width: 95px;
+  height: 37px;
+}
+.y-ua_svg_yes .y-header_islet__logo-img {
+  display: none;
+}
+.y-ua_svg_yes .y-header_islet__logo {
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+.y-ua_svg_yes .y-header_islet__logo._lang_ru,
+.y-ua_svg_yes .y-header_islet__logo._lang_uk {
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__logo-ru.svg");
+}
+.y-ua_svg_yes .y-header_islet__logo._lang_en,
+.y-ua_svg_yes .y-header_islet__logo._lang_tr {
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header_skin_islet__logo-en.svg");
+}
+.y-header_islet__user,
+.y-header_islet__user::before,
+.y-header_islet__userpic,
+.y-header_islet__username {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+.y-header_islet__user {
+  position: relative;
+}
+.y-header_islet__user::before,
+.y-header_islet__userpic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.y-header_islet__user::before {
+  position: absolute;
+  content: '';
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+.y-header_islet__username {
+  font: 15px/80% Arial, Helvetica, sans-serif;
+  max-width: 140px;
+  white-space: nowrap;
+  color: #000;
+}
+.y-header_islet__user:hover .y-header_islet__username,
+.y-header_islet__username:first-letter {
+  color: #f00;
+}
+.y-header_islet__userpic + .y-header_islet__username {
+  margin-left: 10px;
+}
+.y-header_islet__board-call + .y-header_islet__user {
+  margin-left: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .y-header_islet__username {
+    display: none;
+  }
+}
+.y-header_islet__service-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  display: -moz-inline-box;
+  display: inline-block;
+  margin: 0;
+/* По дизайну внутри стрелки точновыверенные отступы */
+  padding-left: 9px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+}
+.y-header_islet__form {
+  max-width: 658px;
+  height: 32px;
+}
+.y-header_islet__form .y-header_islet__button {
+  float: right;
+/* Отступ между полем поиска и кнопкаой Найти согласно SERP-спецификации */
+  margin-left: 5px;
+}
+.y-header_islet__form .y-header_islet__input {
+/* Задаёт новый контекст для блока, поэтому остаётся на той же строке, что и рядом расположенный флоут с кнопкой */
+  overflow: hidden;
+}
+.y-header_islet__board-call {
+  width: 38px;
+  height: 38px;
+  line-height: 34px;
+}
+.y-header_islet__board-call-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  background: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header__board-call-icon.png") center no-repeat;
+}
+.y-ua_svg_yes .y-header_islet__board-call-icon {
+  background-image: url("../../node_modules/islets/blocks/common/y-header/_skin/y-header__board-call-icon.svg");
+}
+/* /Users/art/tmp/baby-loris/node_modules/islets/blocks/common/y-header/y-header_islet.styl:end */
+
+.text__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+.text__paragraph:last-child {
+    margin-bottom: 0px;
+}
+
 .title {
     font-family: Georgia, sans-serif;
     font-weight: 300;
@@ -71,97 +829,830 @@
     margin-bottom: 7px;
 }
 
-.menu-item {
-    font-size: 28px;
-    line-height: 28px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
+/* ../../libs/bem-components/design/common.blocks/button/_theme/button_theme_islands.styl begin */
+.button_theme_islands {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  white-space: nowrap;
+/* Decorative element (inner background) */
 }
-
-.menu-item > a {
-    text-decoration: none;
-    color: gray;
+.button_theme_islands::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
-
-.menu-item > a:hover {
-    text-decoration: !inherit;
-    color: black;
+.button_theme_islands .button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
 }
-
-
-.text__paragraph {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 22px;
+.button_theme_islands .button__text {
+/*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+  position: relative;
+  display: inline-block;
 }
-
-.text__paragraph:last-child {
-    margin-bottom: 0px;
+.button_theme_islands .icon {
+  position: relative;
 }
-
+.button_theme_islands.button_type_link {
+  text-decoration: none;
+}
+.button_theme_islands:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.button_theme_islands.button_hovered {
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+.button_theme_islands.button_focused-hard {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+.button_theme_islands.button_pressed:before {
+  background: #f6f5f3;
+}
+.button_theme_islands.button_checked {
+  background: rgba(153,122,0,0.5);
+}
+.button_theme_islands.button_checked:before {
+  background: #ffeba0;
+}
+.button_theme_islands.button_checked.button_pressed {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_islands.button_checked.button_pressed:before {
+  background: #fee481;
+}
+.button_theme_islands.button_checked.button_hovered {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_islands.button_view_action {
+  background: rgba(191,153,0,0.8);
+}
+.button_theme_islands.button_view_action:before {
+  background: #ffdb4d;
+}
+.button_theme_islands.button_view_action.button_pressed:before {
+  background: #fc0;
+}
+.button_theme_islands.button_view_action.button_hovered {
+  background: rgba(159,127,0,0.8);
+}
+.button_theme_islands.button_view_pseudo {
+  overflow: hidden;
+  background: 0;
+}
+.button_theme_islands.button_view_pseudo:before {
+  background: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.button_theme_islands.button_view_pseudo.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+}
+.button_theme_islands.button_view_pseudo.button_focused-hard:before {
+  box-shadow: 0 0 0 1px rgba(178,142,0,0.6);
+}
+.button_theme_islands.button_view_pseudo.button_pressed:before {
+  background: rgba(0,0,0,0.05);
+}
+.button_theme_islands.button_view_pseudo.button_checked:before {
+  background: #ffeba0;
+  box-shadow: 0 0 0 1px rgba(153,122,0,0.5);
+}
+.button_theme_islands.button_view_pseudo.button_checked.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_islands.button_view_pseudo.button_checked.button_pressed:before {
+  background: #fee481;
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_islands.button_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.button_theme_islands.button_disabled:before {
+  display: none;
+}
+.button_theme_islands.button_disabled.button_checked:before {
+  display: block;
+  background: #ffeba0;
+}
+.button_theme_islands.button_disabled .button__text {
+  color: #aaa;
+}
+.button_theme_islands.button_disabled .icon {
+  opacity: 0.3;
+}
+.button_theme_islands.button_size_s {
+  font-size: 13px;
+  line-height: 24px;
+}
+.button_theme_islands.button_size_s .icon {
+  width: 24px;
+}
+.button_theme_islands.button_size_s .button__text {
+  margin: 0 10px;
+}
+.button_theme_islands.button_size_m {
+  font-size: 13px;
+  line-height: 28px;
+}
+.button_theme_islands.button_size_m .icon {
+  width: 28px;
+}
+.button_theme_islands.button_size_m .button__text {
+  margin: 0 13px;
+}
+.button_theme_islands.button_size_l {
+  font-size: 15px;
+  line-height: 32px;
+}
+.button_theme_islands.button_size_l .icon {
+  width: 32px;
+}
+.button_theme_islands.button_size_l .button__text {
+  margin: 0 15px;
+}
+.button_theme_islands.button_size_xl {
+  font-size: 18px;
+  line-height: 38px;
+}
+.button_theme_islands.button_size_xl .icon {
+  width: 38px;
+}
+.button_theme_islands.button_size_xl .button__text {
+  margin: 0 18px;
+}
+.button_theme_islands .icon + .button__text {
+  margin-left: 0;
+}
+.button_theme_islands .button__text:not(:last-child) {
+  margin-right: 0;
+}
+.control-group .button_theme_islands {
+  border-radius: 0;
+}
+.control-group .button_theme_islands:before {
+  right: 0;
+  border-radius: 0;
+}
+.control-group .button_theme_islands.button_checked:before {
+  left: 1px;
+  right: 1px;
+}
+.control-group > .button_theme_islands:first-child,
+.control-group > :first-child .button_theme_islands {
+  border-radius: 3px 0 0 3px;
+}
+.control-group > .button_theme_islands:first-child:before,
+.control-group > :first-child .button_theme_islands:before {
+  border-radius: 2px 0 0 2px;
+}
+.control-group > .button_theme_islands:last-child,
+.control-group > :last-child .button_theme_islands {
+  border-radius: 0 3px 3px 0;
+}
+.control-group > .button_theme_islands:last-child:before,
+.control-group > :last-child .button_theme_islands:before {
+  border-radius: 0 2px 2px 0;
+  right: 1px;
+}
+.control-group > :only-child .button_theme_islands {
+  border-radius: 3px;
+}
+.control-group > :only-child .button_theme_islands:before {
+  border-radius: 2px;
+}
+/* ../../libs/bem-components/design/common.blocks/button/_theme/button_theme_islands.styl end */
+/* ../../libs/bem-components/common.blocks/popup/popup.styl begin */
+.popup {
+  position: absolute;
+}
+/* ../../libs/bem-components/common.blocks/popup/popup.styl end */
+/* ../../libs/bem-components/design/common.blocks/dropdown/_theme/dropdown_theme_islands.styl begin */
+.dropdown_theme_islands {
+  display: inline-block;
+}
+/* ../../libs/bem-components/design/common.blocks/dropdown/_theme/dropdown_theme_islands.styl end */
+/* ../../libs/bem-components/design/common.blocks/popup/_theme/popup_theme_islands.styl begin */
+.popup_theme_islands {
+  display: none;
+  visibility: hidden;
+  margin: -9999px 0 0 -9999px;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 10px 20px -5px rgba(0,0,0,0.4);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+/* Divided into two parts for better optimization */
+}
+.popup_theme_islands.popup_js_inited {
+  display: block;
+}
+.popup_theme_islands.popup_visible {
+  visibility: visible;
+  margin: 0;
+}
+.popup_theme_islands.popup_direction_bottom-left {
+  -webkit-animation-name: popup_theme_islands_bottom;
+  animation-name: popup_theme_islands_bottom;
+}
+.popup_theme_islands.popup_direction_bottom-center {
+  -webkit-animation-name: popup_theme_islands_bottom;
+  animation-name: popup_theme_islands_bottom;
+}
+.popup_theme_islands.popup_direction_bottom-right {
+  -webkit-animation-name: popup_theme_islands_bottom;
+  animation-name: popup_theme_islands_bottom;
+}
+.popup_theme_islands.popup_direction_bottom-left.popup_visible {
+  -webkit-animation-name: popup_theme_islands_bottom_visible;
+  animation-name: popup_theme_islands_bottom_visible;
+}
+.popup_theme_islands.popup_direction_bottom-center.popup_visible {
+  -webkit-animation-name: popup_theme_islands_bottom_visible;
+  animation-name: popup_theme_islands_bottom_visible;
+}
+.popup_theme_islands.popup_direction_bottom-right.popup_visible {
+  -webkit-animation-name: popup_theme_islands_bottom_visible;
+  animation-name: popup_theme_islands_bottom_visible;
+}
+.popup_theme_islands.popup_direction_top-left {
+  -webkit-animation-name: popup_theme_islands_top;
+  animation-name: popup_theme_islands_top;
+}
+.popup_theme_islands.popup_direction_top-center {
+  -webkit-animation-name: popup_theme_islands_top;
+  animation-name: popup_theme_islands_top;
+}
+.popup_theme_islands.popup_direction_top-right {
+  -webkit-animation-name: popup_theme_islands_top;
+  animation-name: popup_theme_islands_top;
+}
+.popup_theme_islands.popup_direction_top-left.popup_visible {
+  -webkit-animation-name: popup_theme_islands_top_visible;
+  animation-name: popup_theme_islands_top_visible;
+}
+.popup_theme_islands.popup_direction_top-center.popup_visible {
+  -webkit-animation-name: popup_theme_islands_top_visible;
+  animation-name: popup_theme_islands_top_visible;
+}
+.popup_theme_islands.popup_direction_top-right.popup_visible {
+  -webkit-animation-name: popup_theme_islands_top_visible;
+  animation-name: popup_theme_islands_top_visible;
+}
+.popup_theme_islands.popup_direction_right-top {
+  -webkit-animation-name: popup_theme_islands_right;
+  animation-name: popup_theme_islands_right;
+}
+.popup_theme_islands.popup_direction_right-center {
+  -webkit-animation-name: popup_theme_islands_right;
+  animation-name: popup_theme_islands_right;
+}
+.popup_theme_islands.popup_direction_right-bottom {
+  -webkit-animation-name: popup_theme_islands_right;
+  animation-name: popup_theme_islands_right;
+}
+.popup_theme_islands.popup_direction_right-top.popup_visible {
+  -webkit-animation-name: popup_theme_islands_right_visible;
+  animation-name: popup_theme_islands_right_visible;
+}
+.popup_theme_islands.popup_direction_right-center.popup_visible {
+  -webkit-animation-name: popup_theme_islands_right_visible;
+  animation-name: popup_theme_islands_right_visible;
+}
+.popup_theme_islands.popup_direction_right-bottom.popup_visible {
+  -webkit-animation-name: popup_theme_islands_right_visible;
+  animation-name: popup_theme_islands_right_visible;
+}
+.popup_theme_islands.popup_direction_left-top {
+  -webkit-animation-name: popup_theme_islands_left;
+  animation-name: popup_theme_islands_left;
+}
+.popup_theme_islands.popup_direction_left-center {
+  -webkit-animation-name: popup_theme_islands_left;
+  animation-name: popup_theme_islands_left;
+}
+.popup_theme_islands.popup_direction_left-bottom {
+  -webkit-animation-name: popup_theme_islands_left;
+  animation-name: popup_theme_islands_left;
+}
+.popup_theme_islands.popup_direction_left-top.popup_visible {
+  -webkit-animation-name: popup_theme_islands_left_visible;
+  animation-name: popup_theme_islands_left_visible;
+}
+.popup_theme_islands.popup_direction_left-center.popup_visible {
+  -webkit-animation-name: popup_theme_islands_left_visible;
+  animation-name: popup_theme_islands_left_visible;
+}
+.popup_theme_islands.popup_direction_left-bottom.popup_visible {
+  -webkit-animation-name: popup_theme_islands_left_visible;
+  animation-name: popup_theme_islands_left_visible;
+}
+@-webkit-keyframes popup_theme_islands_bottom {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@keyframes popup_theme_islands_bottom {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popup_theme_islands_bottom_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes popup_theme_islands_bottom_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes popup_theme_islands_top {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@keyframes popup_theme_islands_top {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popup_theme_islands_top_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes popup_theme_islands_top_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes popup_theme_islands_right {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@keyframes popup_theme_islands_right {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popup_theme_islands_right_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes popup_theme_islands_right_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes popup_theme_islands_left {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@keyframes popup_theme_islands_left {
+  0% {
+    visibility: visible;
+    margin: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  99% {
+    margin: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes popup_theme_islands_left_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes popup_theme_islands_left_visible {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* ../../libs/bem-components/design/common.blocks/popup/_theme/popup_theme_islands.styl end */
+/* ../../libs/bem-components/design/common.blocks/link/_theme/link_theme_islands.styl begin */
+.link_theme_islands {
+  color: #44b;
+  cursor: pointer;
+  -webkit-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+}
+.link_theme_islands.link_view_minor {
+  color: #669;
+}
+.link_theme_islands.link_view_external {
+  color: #070;
+}
+.link_theme_islands:hover {
+  color: #e00;
+}
+/* ../../libs/bem-components/design/common.blocks/link/_theme/link_theme_islands.styl end */
+/* ../../libs/bem-components/common.blocks/menu/menu.styl begin */
 .menu {
-    padding-left: 0px;
+  overflow-y: auto;
 }
-.menu-dropdown__list {
-    display: none;
-    position: absolute;
-    z-index: 32000;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: white;
-    border: 1px solid #CCC;
+/* ../../libs/bem-components/common.blocks/menu/menu.styl end */
+/* ../../libs/bem-components/design/common.blocks/menu/_theme/menu_theme_simple.styl begin */
+.menu_theme_simple {
+  outline: 0;
 }
-
-.menu-dropdown__list_opened {
-    display: block;
+.menu_theme_simple.menu_focused {
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px 1px #fc0;
 }
-
-.menu-dropdown__item {
-    list-style: none;
-    background-color: white;
-
-    font-size: 16px;
-    line-height: 22px;
-    padding-left: 10px;
-    padding-right: 10px;
+.menu_theme_simple .menu__group-title {
+  font-style: italic;
+  padding: 4px 10px;
 }
-
-.menu-dropdown__item:hover {
-    background-color: #DDD;
+/* ../../libs/bem-components/design/common.blocks/menu/_theme/menu_theme_simple.styl end */
+/* ../../libs/bem-components/design/common.blocks/menu-item/_theme/menu-item_theme_simple.styl begin */
+.menu-item_theme_simple {
+  padding: 4px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-
-..menu-dropdown__list {
-    border: 1px solid #CCC;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: white;
+.menu__group .menu-item_theme_simple {
+  padding-left: 25px;
 }
-
-.menu-dropdown__item {
-    font-size: 16px;
-    line-height: 22px;
-    padding-left: 10px;
-    padding-right: 10px;
+.menu-item_theme_simple.menu-item_disabled {
+  opacity: 0.3;
 }
-
-.menu-dropdown__item > a {
-    text-decoration: none;
-    color: black;
+.menu-item_theme_simple .link_disabled {
+  cursor: text;
 }
-
-.menu-dropdown__button {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 22px;
-    padding-left: 10px;
-    color: black;
+.menu-item_theme_simple.menu-item_checked {
+  font-weight: bold;
+  background: #fff7db;
 }
-
-.menu {
-    padding-left: 0px;
+.menu-item_theme_simple.menu-item_hovered {
+  cursor: pointer;
+  background: #ffc7c7;
 }
+.menu-item_theme_simple .icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.4em;
+  vertical-align: top;
+}
+/* ../../libs/bem-components/design/common.blocks/menu-item/_theme/menu-item_theme_simple.styl end */
+/* ../../libs/bem-components/design/common.blocks/menu/_theme/menu_theme_islands.styl begin */
+.menu_theme_islands {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+  background: #fff;
+}
+.menu_theme_islands.menu_size_s {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 3px 0;
+}
+.menu_theme_islands.menu_size_s .menu-item + .menu__group {
+  margin-top: 3px;
+}
+.menu_theme_islands.menu_size_s .menu__group {
+  padding: 3px 0;
+}
+.menu_theme_islands.menu_size_s .menu__group-title {
+  padding: 0 10px;
+}
+.menu_theme_islands.menu_size_m {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 4px 0;
+}
+.menu_theme_islands.menu_size_m .menu-item + .menu__group {
+  margin-top: 4px;
+}
+.menu_theme_islands.menu_size_m .menu__group {
+  padding: 4px 0;
+}
+.menu_theme_islands.menu_size_m .menu__group-title {
+  padding: 0 13px;
+}
+.menu_theme_islands.menu_size_l {
+  font-size: 15px;
+  line-height: 28px;
+  padding: 5px 0;
+}
+.menu_theme_islands.menu_size_l .menu-item + .menu__group {
+  margin-top: 5px;
+}
+.menu_theme_islands.menu_size_l .menu__group {
+  padding: 5px 0;
+}
+.menu_theme_islands.menu_size_l .menu__group-title {
+  padding: 0 15px;
+}
+.menu_theme_islands.menu_size_xl {
+  font-size: 15px;
+  line-height: 32px;
+  padding: 6px 0;
+}
+.menu_theme_islands.menu_size_xl .menu-item + .menu__group {
+  margin-top: 6px;
+}
+.menu_theme_islands.menu_size_xl .menu__group {
+  padding: 6px 0;
+}
+.menu_theme_islands.menu_size_xl .menu__group-title {
+  padding: 0 20px;
+}
+.menu_theme_islands .menu__group {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-width: 1px 0;
+}
+.menu_theme_islands .menu__group-title {
+  color: #999;
+}
+.menu_theme_islands .menu__group + .menu__group {
+  border-top: 0;
+}
+.menu_theme_islands .menu__group:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.menu_theme_islands .menu__group:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+/* ../../libs/bem-components/design/common.blocks/menu/_theme/menu_theme_islands.styl end */
+/* ../../libs/bem-components/design/common.blocks/menu-item/_theme/menu-item_theme_islands.styl begin */
+.menu-item_theme_islands {
+  position: relative;
+  white-space: nowrap;
+}
+.menu-item_theme_islands.menu-item_disabled {
+  opacity: 0.3;
+}
+.menu-item_theme_islands .link_disabled {
+  cursor: text;
+}
+.menu-item_theme_islands.menu-item_checked {
+  background: 0 50% no-repeat url("../../libs/bem-components/design/common.blocks/theme/_islands/tip.svg");
+}
+.menu-item_theme_islands.menu-item_hovered {
+  cursor: pointer;
+  background-color: #ffeba0;
+}
+.menu-item_theme_islands.menu-item_type_link .link {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+.menu-item_theme_islands .icon {
+  width: 16px;
+  margin-right: 5px;
+}
+.menu_size_s .menu-item_theme_islands {
+  padding: 0 10px;
+  background-size: 14px 14px;
+  background-position: 10px 50%;
+}
+.menu_size_s .menu__group + .menu-item_theme_islands {
+  margin-top: 3px;
+}
+.menu_size_s[class*='menu_mode'] .menu-item_theme_islands,
+.menu_size_s .menu__group-title ~ .menu-item_theme_islands {
+  padding: 0 30px;
+}
+.menu_size_m .menu-item_theme_islands {
+  padding: 0 13px;
+  background-size: 14px 14px;
+  background-position: 13px 50%;
+}
+.menu_size_m .menu__group + .menu-item_theme_islands {
+  margin-top: 4px;
+}
+.menu_size_m[class*='menu_mode'] .menu-item_theme_islands,
+.menu_size_m .menu__group-title ~ .menu-item_theme_islands {
+  padding: 0 30px;
+}
+.menu_size_l .menu-item_theme_islands {
+  padding: 0 15px;
+  background-size: 15px 15px;
+  background-position: 15px 50%;
+}
+.menu_size_l .menu__group + .menu-item_theme_islands {
+  margin-top: 5px;
+}
+.menu_size_l[class*='menu_mode'] .menu-item_theme_islands,
+.menu_size_l .menu__group-title ~ .menu-item_theme_islands {
+  padding: 0 34px;
+}
+.menu_size_xl .menu-item_theme_islands {
+  padding: 0 20px;
+  background-size: 15px 15px;
+  background-position: 20px 50%;
+}
+.menu_size_xl .menu__group + .menu-item_theme_islands {
+  margin-top: 6px;
+}
+.menu_size_xl[class*='menu_mode'] .menu-item_theme_islands,
+.menu_size_xl .menu__group-title ~ .menu-item_theme_islands {
+  padding: 0 40px;
+}
+/* ../../libs/bem-components/design/common.blocks/menu-item/_theme/menu-item_theme_islands.styl end */
 
 .page {
     padding-left: 200px;

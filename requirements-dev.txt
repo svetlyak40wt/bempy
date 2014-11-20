@@ -1,4 +1,6 @@
-Django
+Django<1.7
+anyjson
 pdbpp
 django-extensions
 Werkzeug
+clint

@@ -30,10 +30,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'django_extensions',
+
+    'blog',
     
     'blocks.page',
     'blocks.post',
-    'blocks.button',
+#    'blocks.button',
     'blocks.comments',
     'blocks.guideline',
 
@@ -45,6 +47,8 @@ INSTALLED_APPS = (
     'bempy.django.blocks.href',
     'bempy.django.blocks.attach',
     'bempy.django.blocks.button',
+    'bem_common',
+    'islets',
 )
 
 MIDDLEWARE_CLASSES = (
