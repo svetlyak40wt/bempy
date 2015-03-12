@@ -100,7 +100,7 @@ def get_block_js(func, **modifiers):
     if os.path.exists(main_js_filename):
         print colored.green('found')
         with open(main_js_filename) as f:
-            result += f.read() + '\n'
+            result += f.read().decode('utf-8') + u'\n'
     else:
         print colored.red('missing')
 
@@ -109,14 +109,14 @@ def get_block_js(func, **modifiers):
         if os.path.exists(js_filename_with_modifiers):
             print colored.green('found')
             with open(js_filename_with_modifiers) as f:
-                result += f.read() + '\n'
+                result += f.read().decode('utf-8') + u'\n'
         else:
             print colored.red('missing')
 
     return result
 
 
-def block(**modifiers):
+def block():
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -126,6 +126,9 @@ def block(**modifiers):
             # если render ни разу не вызывался, то returned_context будет пустой
             # get-css использует returned_context для извлечения информации о блоках
             # которые страница использует внутри, а не получает на входе
+
+            # TODO: remove link between this
+            # dependecies should be given explicitly
             returned_context = {}
 
             def ret(action, **additional_context):
@@ -153,7 +156,7 @@ def block(**modifiers):
                     rendered_context = dict((key, render(value))
                                             for key, value in returned_context.iteritems())
 
-                    return render_to_string(get_template_name(func, **modifiers),
+                    return render_to_string(get_template_name(func),
                                             rendered_context,
                                             RequestContext(request))
                 elif action == 'get-css':
@@ -169,13 +172,16 @@ def block(**modifiers):
                             return value('get-css')
                         return []
 
-                    css = [get_block_css(func, **modifiers)]
+                    css = [get_block_css(func)]
 
-                    for key, value in chain(kwargs.iteritems(),
-                                            returned_context.iteritems()):
-                        for item in get_css(value):
-                            if item is not None:
-                                css.append(item)
+                    for value in getattr(func, 'uses_blocks', []):
+                        try:
+                            for item in get_css(value()):
+                                if item is not None:
+                                    css.append(item)
+                        except TypeError:
+                            import pdb; pdb.set_trace()
+                            raise
                     return list(set(css))
 
                 elif action == 'get-js':
@@ -191,7 +197,7 @@ def block(**modifiers):
                             return value('get-js')
                         return []
 
-                    js = [get_block_js(func, **modifiers)]
+                    js = [get_block_js(func)]
 
                     for key, value in chain(kwargs.iteritems(),
                                             returned_context.iteritems()):
@@ -204,49 +210,31 @@ def block(**modifiers):
             ret.block_actions = ['render', 'get-css', 'get-js']
             ret.__name__ = 'block_' + func.__name__
             return ret
-        registry[(func.__name__, dict_to_key(modifiers))] = wrapper
+        registry[func.__name__] = wrapper
         return wrapper
     return decorator
 
 
-def context_blocks(*args, **modifiers):
+def context_blocks(*args):
     """Basic block with no logic inside.
     It only passes given context to the renderer.
     """
     names, env = args[:-1], args[-1:][0]
 
     for name in names:
-        if isinstance(name, tuple):
-            name, modifiers = name
-        else:
-            modifiers = {}
-
         def _block(*args, **content):
             return dict(content, args=args)
         _block.__name__ = name
         _block.__module__ = env['__name__']
-        env[name] = block(**modifiers)(_block)
+        env[name] = block()(_block)
 
 
 class Dispatcher(object):
     def __init__(self, name):
         self.name = name
 
-    def __call__(self, *args, **kwargs):
-        possible_modifiers = [key[1] for key, value in registry.items()
-                              if key[0] == self.name]
-        possible_modifiers = reduce(operator.add, possible_modifiers, tuple())
-        possible_modifiers = {item[0] for item in possible_modifiers}
-
-        modifiers = {key: value
-                     for key, value in kwargs.items()
-                     if key in possible_modifiers}
-
-        content = {key: value
-                   for key, value in kwargs.items()
-                   if key not in modifiers}
-
-        block_constructor = registry[(self.name, dict_to_key(modifiers))]
+    def __call__(self, *args, **content):
+        block_constructor = registry[self.name]
         return block_constructor(*args, **content)
 
 

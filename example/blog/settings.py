@@ -93,8 +93,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'production_static'
 BEMPY_STATIC_DIR = os.path.join(
-    os.path.dirname(__file__),
-    'static')
+    BASE_DIR,
+    'bempy-static')
+
+if not os.path.exists(BEMPY_STATIC_DIR):
+    os.makedirs(BEMPY_STATIC_DIR)
+    
+print 'BASE_DIR=', BASE_DIR
 
 STATICFILES_DIRS = [BEMPY_STATIC_DIR]
+STATICFILES_FINDERS = ('bempy.django.static.ViewFinder',
+                       "django.contrib.staticfiles.finders.FileSystemFinder",
+                       "django.contrib.staticfiles.finders.AppDirectoriesFinder")
+
+TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader',
+                    'django.template.loaders.app_directories.Loader',
+                    'bempy.django.TemplateLoader')

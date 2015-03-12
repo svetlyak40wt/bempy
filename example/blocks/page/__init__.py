@@ -1,15 +1,17 @@
 from bempy import block, b
 from bempy.django import uses
+from bempy.django.blocks import cssreset, menu, title, href, menu_item, selected_menu_item
+from islets import y_header_with_search, y_header
 
-@block(with_menu=True)
-@uses('bempy.django.blocks.cssreset',
-#      'bempy.django.blocks.menu',
-      'bempy.django.blocks.title')
-def page(request, menu, **content):
+
+@block()
+@uses(cssreset, menu, title, href, y_header_with_search, y_header)
+def page_with_menu(request, menu_items, **content):
     context = content.copy()
 
-    context['title'] = b.title("Bempy's Blog")
-    context['cssreset'] = b.cssreset()
+    context['header'] = y_header_with_search('Bempy')
+    context['title'] = title("Bempy's Blog")
+    context['cssreset'] = cssreset()
 
     if request.user.is_authenticated() or True:
         pass
@@ -19,15 +21,14 @@ def page(request, menu, **content):
         #     label=request.user.username or 'svetlyak40wt',
         #     type='dropdown')
     else:
-        context['login'] = b.href('Login', '/login/')
+        context['login'] = href('Login', '/login/')
 
-    # context['menu'] = b.menu(items=[
-    #     b.menu_item(label=label,
-    #                 path=path,
-    #                 selected=True)
-    #     if (request.path == path)
-    #     else b.menu_item(label=label,
-    #                      path=path)
-    #     for path, label in menu])
+    context['menu'] = menu(items=[
+        selected_menu_item(label=label,
+                           path=path)
+        if (request.path == path)
+        else menu_item(label=label,
+                       path=path)
+        for path, label in menu_items])
 
     return context

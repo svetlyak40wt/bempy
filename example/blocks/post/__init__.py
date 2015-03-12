@@ -16,8 +16,8 @@ def post(post):
     return data
 
 
-@block(latest=True)
-def post():
+@block()
+def latest_post():
     return _posts[-1]
 
 
