@@ -9,9 +9,9 @@ from bempy import ImmediateResponse
 
 def returns_blocks(func):
     @wraps(func)
-    def wrapper(request):
-        page = func(request)
-        
+    def wrapper(request, *args, **kwargs):
+        page = func(request, *args, **kwargs)
+
         try:
             if isinstance(page, HttpResponse):
                 return page
